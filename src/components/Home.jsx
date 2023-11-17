@@ -1,11 +1,12 @@
 import React from 'react'
+import Navbar from './navbar/navbar'
+import About from './about/About'
 
-function Home() {
+export default function Home() {
   return (
     <div>
-      <h1>salom</h1>
+        <Navbar />
+        <About />
     </div>
   )
 }
-
-export default Home

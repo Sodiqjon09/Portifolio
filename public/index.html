@@ -1,43 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifolio</title>
+  <!-- <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon"> -->
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!-- favicon.ico -->
+</body>
 </html>

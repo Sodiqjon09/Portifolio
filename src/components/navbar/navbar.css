@@ -27,14 +27,10 @@
 .logo_text p {
   /* font-size: 10px; */
 }
-.logo_text h1:hover {
-  color: var(--jigarrang);
-  transition: 0.2s linear;
-  cursor: pointer;
-}
+.logo_text h1:hover,
 .logo_text p:hover {
   color: var(--jigarrang);
-  transition: 0.2s linear;
+  transition: 0.1s linear;
   cursor: pointer;
 }
 .logo img {
@@ -59,7 +55,7 @@
 }
 .navbar_home ul li a:hover {
   color: var(--jigarrang);
-  transition: 0.2s linear;
+  transition: 0.1s linear;
 }
 button,
 img {
@@ -73,12 +69,12 @@ img {
   color: #461959;
   font-size: 18px;
   font-weight: 700;
-  border-radius: 15px 5px 15px 5px;
+  border-radius: 10px 5px 10px 5px;
   transition: background-color 2s ease-out 1ms;
 }
 .navbar button:hover {
   background-color: var(--jigarrang);
-  border-radius: 5px 15px 5px 15px;
+  border-radius: 5px 10px 5px 10px;
   transition: 0.3s linear;
   color: var(--white);
 }
@@ -86,6 +82,8 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 #home {
   background-color: var(--rangbir);
@@ -147,7 +145,10 @@ img {
   height: 40px;
   transition: 0.2s;
   box-shadow: #fff 0px 5px 15px;
-  
+}
+#network_imgs img {
+  /* width: 50px;
+  height: 50px; */
 }
 #home_about button {
   width: 200px;
@@ -167,23 +168,3 @@ img {
   border-radius: 0px 10px 0px 10px;
   transition: 0.3s;
 }
-/* #network_imgs:hover {
-  outline-offset: 4px;
-}
-#network_imgs:hover img {
-  animation: shake 0.25s;
-}
-@keyframes shake {
-  10% {
-    transform: rotate(15deg);
-  }
-  20% {
-    transform: rotate(-15deg);
-  }
-  30% {
-    transform: rotate(15deg);
-  }
-  40% {
-    transform: rotate(-15deg);
-  }  
-}*/

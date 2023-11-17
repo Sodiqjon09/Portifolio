@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --navbarcolor: #00134b;
+  --white: #fff;
+  --black: black;
+  --jigarrang: #f86f03;
+  --rangbir: #31065a;
+  --rangikki: #170550;
+}
+#AboutMe {
+  background-color: var(--rangikki);
+}
+#About_start h1 {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+}
+#About_start h1 span:nth-child(2) {
+  color: var(--jigarrang);
+}
+#About_start h1 span:hover:nth-child(1) {
+  color: var(--jigarrang);
+  transition: 0.1s linear;
+}
+#About_start h1 span:hover {
+  color: var(--white);
+}
+#border {
+  border: 1px solid var(--white);
+  width: 225px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #d9d9d9;
+  margin: 0 auto;
+}
+#aboutKing {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+}
+.container {
+  position: relative;
+  width: 1160px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+}
+.container .box {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  background: #000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-top: 45px;
+}
+.container:hover .box {
+  transform: rotateY(25deg);
+}
+.container .box:hover ~ .box {
+  transform: rotateY(-25deg);
+}
+.container .box:hover {
+  transform: rotateY(0deg) scale(1.25);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.container .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container .box .imgBx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #f00, #000);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.container .box:hover .imgBx:before {
+  opacity: 1;
+}
+.container .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.container .box .content h2 {
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+.container .box:hover .content h2 {
+  transform: translateY(0px);
+}
+.container .box .content p {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.4s;
+}
+.container .box:hover .content p {
+  transform: translateY(0px);
+}
+/*.*/
+.gallery {
+  --s: 150px;
+  --g: 10px;
+  display: grid;
+  gap: var(--g);
+  grid-template-columns: repeat(2, auto);
+  position: relative;
+}
+.gallery > img {
+  width: var(--s);
+  aspect-ratio: 1;
+  object-fit: cover;
+  -webkit-mask: conic-gradient(from var(--_a), #0000 90deg, #000 0);
+  mask: conic-gradient(from var(--_a), #0000 90deg, #000 0);
+}
+.gallery > img:nth-child(1) {
+  --_a: 90deg;
+}
+.gallery > img:nth-child(2) {
+  --_a: 180deg;
+}
+.gallery > img:nth-child(3) {
+  --_a: 0deg;
+}
+.gallery > img:nth-child(4) {
+  --_a: -90deg;
+}
+.gallery > img:nth-child(5) {
+  position: absolute;
+  inset: calc(50% - 0.5 * var(--s));
+  clip-path: inset(calc(var(--g) / 4));
+}
+x #body {
+  display: grid;
+  place-content: center;
+}
+#AboutMeText h1 {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 600;
+}
+#p {
+  color: var(--white);
+  width: 850px;
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+#p2 {
+  color: var(--white);
+  width: 850px;
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+#AboutMeText button {
+  width: 177px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--white);
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 40px;
+  border: none;
+  box-shadow: var(--jigarrang) 0px 7px 29px 0px;
+}
+#AboutMeText button:hover {
+  background-color: var(--jigarrang);
+  box-shadow: var(--white) 0px 10px 50px;
+  color: #170550;
+  transition: 0.3s linear;
+}
+#te {
+  margin-top: 20px;
+}
+#MeImg img {
+  width: 360px;
+  height: 410px;
+  border-radius: 15px;
+}
